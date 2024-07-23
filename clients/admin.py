@@ -4,7 +4,7 @@ from clients.models import Client
 
 
 @admin.register(Client)
-class UserAdmin(admin.ModelAdmin):
+class ClientAdmin(admin.ModelAdmin):
     list_display = ('id', 'email', 'name', 'surname')
     list_filter = ('id',)
     search_fields = ('email',)
