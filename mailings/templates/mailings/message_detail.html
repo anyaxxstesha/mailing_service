@@ -8,15 +8,14 @@
             <div class="col">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <p class="card-text"><strong>{{ client.surname }} {{ client.name }} {{ client.patronymic }}</strong></p>
-                        <p class="card-text">Почта клиента: {{ client.email }}</p>
+                        <p class="card-text"><strong>Тема письма: {{ message.subject }}</strong></p>
+                        <p class="card-text">{{ message.body }}</p>
                         <p class="card-text">{{ client.comment }}</p>
-                        <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a class="btn btn-primary" href="{% url 'clients:client_list'%}" role="button">Назад</a>
-                                <a class="btn btn-primary" href="{% url 'clients:client_update' client.pk %}" role="button">Редактировать</a>
+                                <a class="btn btn-primary" href="{% url 'mailings:mailing_list'%}" role="button">Назад</a>
+                                <a class="btn btn-primary" href="{% url 'mailings:mailing_update' mailing.pk %}" role="button">Редактировать</a>
                             </div>
-                            <small class="text-body-secondary">Количество рассылок с этим клиентом:</small>
+                            <small class="text-body-secondary">Создатель письма: {{ message.user }}</small>
                         </div>
                     </div>
                 </div>
