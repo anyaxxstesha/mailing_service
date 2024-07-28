@@ -1,0 +1,1224 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2024-07-22T18:04:26.200Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Зачем нужны рассылки?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2024-07-22T18:12:12.455Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Где взять базу подписчиков для email-рассылки",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2024-07-22T18:15:59.619Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Дизайн email-рассылок в 2024 году",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2024-07-22T18:19:23.375Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Дизайн email-рассылок в 2024 году",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2024-07-22T18:23:29.340Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Виды прогревающих рассылок",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2024-07-23T13:32:44.179Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "rigolid495@ikangou.com",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2024-07-23T13:47:26.352Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "mesobo8743@tiervio.com",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2024-07-28T11:28:24.989Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Как завести котенка и не сойти с ума?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2024-07-28T11:42:19.317Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2024-07-28T13:10:28.223Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2024-07-28T13:18:49.682Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "vahoja2648@orsbap.com",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2024-07-28T13:19:38.630Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2024-07-28T13:24:40.893Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2024-07-28T13:30:13.482Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2024-07-28T13:35:42.532Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2024-07-28T13:35:59.384Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2024-07-28T13:37:49.147Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2024-07-28T13:38:40.369Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2024-07-28T13:41:16.127Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2024-07-28T13:41:40.651Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2024-07-28T13:52:03.736Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2024-07-28T13:54:07.059Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2024-07-28T13:58:45.938Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2024-07-28T14:01:01.298Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2024-07-28T14:03:56.216Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2024-07-28T14:05:23.470Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2024-07-28T14:08:00.996Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2024-07-28T14:08:49.508Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2024-07-28T14:10:36.658Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2024-07-28T14:15:38.769Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Рассылка 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2024-07-28T19:07:12.353Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Черные помидоры: за или против?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2024-07-28T19:08:42.991Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "Рассылка 2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2024-07-28T22:03:59.388Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "stesha@chuvirla.lohmataya",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2024-07-28T22:33:06.350Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "1",
+      "object_repr": "managers",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add Пользователь",
+      "content_type": 6,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change Пользователь",
+      "content_type": 6,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete Пользователь",
+      "content_type": 6,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view Пользователь",
+      "content_type": 6,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add Пост",
+      "content_type": 7,
+      "codename": "add_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change Пост",
+      "content_type": 7,
+      "codename": "change_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete Пост",
+      "content_type": 7,
+      "codename": "delete_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view Пост",
+      "content_type": 7,
+      "codename": "view_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Клиент",
+      "content_type": 8,
+      "codename": "add_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Клиент",
+      "content_type": 8,
+      "codename": "change_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Клиент",
+      "content_type": 8,
+      "codename": "delete_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Клиент",
+      "content_type": 8,
+      "codename": "view_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add Сообщение",
+      "content_type": 9,
+      "codename": "add_message"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change Сообщение",
+      "content_type": 9,
+      "codename": "change_message"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete Сообщение",
+      "content_type": 9,
+      "codename": "delete_message"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view Сообщение",
+      "content_type": 9,
+      "codename": "view_message"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add mailing attempt",
+      "content_type": 10,
+      "codename": "add_mailingattempt"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change mailing attempt",
+      "content_type": 10,
+      "codename": "change_mailingattempt"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete mailing attempt",
+      "content_type": 10,
+      "codename": "delete_mailingattempt"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view mailing attempt",
+      "content_type": 10,
+      "codename": "view_mailingattempt"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add Рассылка",
+      "content_type": 11,
+      "codename": "add_mailing"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change Рассылка",
+      "content_type": 11,
+      "codename": "change_mailing"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete Рассылка",
+      "content_type": 11,
+      "codename": "delete_mailing"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view Рассылка",
+      "content_type": 11,
+      "codename": "view_mailing"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can ban mailing",
+      "content_type": 11,
+      "codename": "can_ban_mailing"
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "managers",
+      "permissions": [
+        25,
+        26,
+        27,
+        32,
+        45,
+        44,
+        36,
+        22,
+        24
+      ]
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "users",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "blog",
+      "model": "post"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "clients",
+      "model": "client"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "mailings",
+      "model": "message"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "mailings",
+      "model": "mailingattempt"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "mailings",
+      "model": "mailing"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "44qm91hh4k4tr8ec83wuyykj32rdvoa9",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hAGRmFcuvcMZGCoVA1NSrsy3l2bdKHb_977LxV5XWpce5njKOqsQB1-t8T5UdoG5M7tNuk8tWUek94UvdOur5OU52V3_w4q9_qtHQgRIydwiQdhArGERy_BDrkgZmTvIJBJBP5kbDDg0TvKiKYkD-r9Ad-JNw4:1sVxCg:GxryMpa5ssEgX5f9MtJdIw-ono9nPCwEfa6Gm1QRHmQ",
+      "expire_date": "2024-08-05T17:52:06.193Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "7uj0n2a059zwy0mo93g8n50nmr201pl6",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hAGRmFcuvcMZGCoVA1NSrsy3l2bdKHb_977LxV5XWpce5njKOqsQB1-t8T5UdoG5M7tNuk8tWUek94UvdOur5OU52V3_w4q9_qtHQgRIydwiQdhArGERy_BDrkgZmTvIJBJBP5kbDDg0TvKiKYkD-r9Ad-JNw4:1sYC5U:KpCLp6DJW2jKnS7sxQYB7A2p-m6Bk2Wb26cG8xg7uHA",
+      "expire_date": "2024-08-11T22:09:56.976Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "gy0tg9ipik4aqwku2uph1lrnprst9s5t",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hAGRmFcuvcMZGCoVA1NSrsy3l2bdKHb_977LxV5XWpce5njKOqsQB1-t8T5UdoG5M7tNuk8tWUek94UvdOur5OU52V3_w4q9_qtHQgRIydwiQdhArGERy_BDrkgZmTvIJBJBP5kbDDg0TvKiKYkD-r9Ad-JNw4:1sWFXy:yb0xqJ4P31nza_O6riknsHBpYsQePTMfc9Fju6jxs4I",
+      "expire_date": "2024-08-06T13:27:18.449Z"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$WIlVJ0fVloPTDEGtBLQPIK$V2rMhWbnH0eSvku5QkIvNZuqw5sk06bL2uBQuzPUdNs=",
+      "last_login": "2024-07-28T22:09:56.975Z",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-07-22T17:51:07.369Z",
+      "email": "admin@example.com",
+      "first_name": null,
+      "last_name": null,
+      "phone": null,
+      "company": null,
+      "avatar": "",
+      "token": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$Il6e2dTx3iheGo424FPBbY$C7grfPx+Fqkl0wW0iIPG432IsszJDf3wI63cguRscv0=",
+      "last_login": "2024-07-28T22:04:39.559Z",
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-07-28T22:03:11Z",
+      "email": "stesha@chuvirla.lohmataya",
+      "first_name": null,
+      "last_name": null,
+      "phone": null,
+      "company": null,
+      "avatar": "",
+      "token": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+      "title": "Зачем нужны рассылки?",
+      "content": "Периодические прогревающие рассылки являются важным инструментом для компаний и частных бизнесов по нескольким причинам.\r\n\r\nПоддержание интереса клиентов: Регулярные рассылки помогают поддерживать интерес клиентов к продуктам или услугам компании. Они напоминают о существовании бренда и поддерживают связь с клиентами.\r\n\r\nУкрепление отношений: Рассылки могут быть использованы для укрепления отношений с клиентами. Они могут содержать полезную информацию, советы, новости о компании или отрасли, что помогает установить более тесные связи между брендом и клиентами.\r\n\r\nПовышение узнаваемости бренда: Регулярные рассылки способствуют повышению узнаваемости бренда. Каждое новое письмо напоминает о компании и укрепляет её позицию на рынке.\r\n\r\nСтимуляция продаж: Путем включения актуальных предложений, скидок или специальных акций в рассылки компании могут стимулировать продажи и увеличивать конверсию клиентов в покупателей.\r\n\r\nСбор обратной связи: Рассылки можно использовать для сбора обратной связи от клиентов, что помогает компании лучше понять их потребности и ожидания.\r\n\r\nПоддержание актуальности: Частые рассылки помогают поддерживать актуальность информации о компании, её продуктах и услугах среди клиентов.\r\n\r\nТаким образом, периодические прогревающие рассылки играют важную роль в маркетинговой стратегии компаний, помогая поддерживать интерес и укреплять отношения с клиентами.",
+      "preview_image": "blog/images/mailshot.jpg",
+      "created_at": "2024-07-22",
+      "is_published": true,
+      "views_amount": 9
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 2,
+    "fields": {
+      "title": "Где взять базу подписчиков для email-рассылки?",
+      "content": "Чтобы собрать базу подписчиков для email-рассылки, используйте различные методы, такие как размещение форм подписки на вашем сайте и блогах, создание лендинговых страниц с уникальными предложениями, активное продвижение через социальные сети и участие в вебинарах и офлайн-мероприятиях. Сотрудничайте с партнёрами и используйте реферальные программы, чтобы привлечь новых подписчиков. Обеспечьте оптимизацию форм подписки для мобильных устройств и соблюдайте законодательство о защите персональных данных, предоставляя пользователям возможность легко отписаться от рассылки.",
+      "preview_image": "blog/images/clients.png",
+      "created_at": "2024-07-22",
+      "is_published": true,
+      "views_amount": 7
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 3,
+    "fields": {
+      "title": "Дизайн email-рассылок в 2024 году",
+      "content": "Дизайн email-рассылок в 2024 году ориентирован на минимализм, персонализацию и интерактивность. Визуально чистые и простые макеты с большим количеством белого пространства помогают улучшить читаемость и внимание к основному контенту. Персонализация играет ключевую роль: использование данных о пользователях для создания сегментированных и релевантных сообщений повышает вовлечённость. Интерактивные элементы, такие как карусели изображений, кнопки с анимацией и опросы, делают письма более динамичными и привлекательными. Адаптивный дизайн, оптимизированный для мобильных устройств, остаётся критически важным, поскольку большая часть пользователей просматривает почту на смартфонах. Наконец, акцент на доступность, включая использование альтернативного текста для изображений и поддержка экранных читалок, делает рассылки доступными для более широкой аудитории.",
+      "preview_image": "blog/images/design2.jpg",
+      "created_at": "2024-07-22",
+      "is_published": true,
+      "views_amount": 7
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 4,
+    "fields": {
+      "title": "Виды прогревающих рассылок",
+      "content": "Прогревающие рассылки (nurture campaigns) включают несколько ключевых видов: приветственные письма для новых подписчиков, образовательные рассылки с полезной информацией и советами, промо-рассылки с акциями и скидками, клиентские истории и отзывы, обновления и новости компании, а также рассылки для повторного вовлечения неактивных подписчиков. Эти виды рассылок помогают строить доверие, повышать вовлечённость и преобразовывать подписчиков в лояльных клиентов, обеспечивая последовательное и персонализированное взаимодействие на протяжении всего цикла продаж.",
+      "preview_image": "blog/images/mailings.jpg",
+      "created_at": "2024-07-22",
+      "is_published": true,
+      "views_amount": 10
+    }
+  },
+  {
+    "model": "clients.client",
+    "pk": 1,
+    "fields": {
+      "email": "rigolid495@ikangou.com",
+      "surname": "Ахмедов",
+      "name": "Икан",
+      "patronymic": "Магомедович",
+      "comment": "Лояльный клиент, часто участвует в рекламных предложениях, уровень вовлеченности высокий, активность на платформе - 2,5 часа в день в среднем.",
+      "user": 1
+    }
+  },
+  {
+    "model": "clients.client",
+    "pk": 2,
+    "fields": {
+      "email": "vahoja2648@orsbap.com",
+      "surname": "Зелемханов",
+      "name": "Юкан",
+      "patronymic": "Артурович",
+      "comment": "Звонки предпочитает в вечернее время с 18:00 до 23:00. Консультанта слушает внимательно, почти все товары и услуги ему удается продать. Рекомендации по звонкам и эмейлам: доступна высокая интенсивность звонков и прогревающих рассылок, поскольку клиент очень лояльно относится к сервису и числится в базе клиентов более пяти лет",
+      "user": 1
+    }
+  },
+  {
+    "model": "mailings.message",
+    "pk": 1,
+    "fields": {
+      "subject": "Как завести котенка и не сойти с ума?",
+      "body": "Чтобы завести котенка и не сойти с ума, подготовьтесь заранее. Обеспечьте его всем необходимым: лоток, корм, игрушки, когтеточку и уютное место для сна. Постепенно знакомьте его с домом, создавая безопасную и спокойную обстановку. Регулярно играйте и взаимодействуйте с ним, чтобы он чувствовал себя любимым и защищённым. Не забывайте о посещениях ветеринара и своевременных прививках. Обучайте котенка правильному поведению с помощью положительного подкрепления и терпения. Установите режим кормления и уборки, чтобы избежать беспорядка и стресса. И главное, будьте готовы к тому, что котенок потребует времени и внимания, но ваша любовь и забота окупятся его преданностью и лаской.",
+      "user": 1
+    }
+  },
+  {
+    "model": "mailings.message",
+    "pk": 2,
+    "fields": {
+      "subject": "Черные помидоры: за или против?",
+      "body": "Темную окраску томатам придают антоцианы - растительные пигменты. Именно они определяют лечебные свойства черных плодов. Антоцианы эффективно борются с воспалением, нормализуют уровень глюкозы в крови у больных диабетом. Доказано положительное влияние темно окрашенных овощей на метаболизм и борьбу с лишним весом.",
+      "user": 1
+    }
+  },
+  {
+    "model": "mailings.mailing",
+    "pk": 1,
+    "fields": {
+      "name": "Кошачий патруль",
+      "message": 1,
+      "user": 1,
+      "created_at": "2024-07-28T11:42:19.314Z",
+      "first_attempt_at": null,
+      "last_attempt_at": "2024-07-28T14:15:53.678Z",
+      "started_at": "2024-07-28T14:15:29Z",
+      "completed_at": "2024-07-30T16:40:14Z",
+      "sending_interval": "P1D",
+      "frequency": "DAILY",
+      "status": "SENDING",
+      "is_banned": false,
+      "clients": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "mailings.mailing",
+    "pk": 2,
+    "fields": {
+      "name": "Томаты",
+      "message": 2,
+      "user": 1,
+      "created_at": "2024-07-28T19:08:42.987Z",
+      "first_attempt_at": null,
+      "last_attempt_at": null,
+      "started_at": "2024-07-16T06:00:00Z",
+      "completed_at": "2024-08-16T06:00:00Z",
+      "sending_interval": "P7D",
+      "frequency": "WEEKLY",
+      "status": "CREATED",
+      "is_banned": false,
+      "clients": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "mailings.mailingattempt",
+    "pk": 1,
+    "fields": {
+      "mailing": 1,
+      "attempt_at": "2024-07-28T14:06:58.143Z",
+      "status": "OK",
+      "server_response": "1"
+    }
+  },
+  {
+    "model": "mailings.mailingattempt",
+    "pk": 2,
+    "fields": {
+      "mailing": 1,
+      "attempt_at": "2024-07-28T14:07:53.678Z",
+      "status": "OK",
+      "server_response": "1"
+    }
+  },
+  {
+    "model": "mailings.mailingattempt",
+    "pk": 3,
+    "fields": {
+      "mailing": 1,
+      "attempt_at": "2024-07-28T14:08:53.678Z",
+      "status": "OK",
+      "server_response": "1"
+    }
+  },
+  {
+    "model": "mailings.mailingattempt",
+    "pk": 4,
+    "fields": {
+      "mailing": 1,
+      "attempt_at": "2024-07-28T14:11:53.679Z",
+      "status": "OK",
+      "server_response": "1"
+    }
+  },
+  {
+    "model": "mailings.mailingattempt",
+    "pk": 5,
+    "fields": {
+      "mailing": 1,
+      "attempt_at": "2024-07-28T14:14:36.614Z",
+      "status": "OK",
+      "server_response": "1"
+    }
+  },
+  {
+    "model": "mailings.mailingattempt",
+    "pk": 6,
+    "fields": {
+      "mailing": 1,
+      "attempt_at": "2024-07-28T14:14:36.614Z",
+      "status": "OK",
+      "server_response": "1"
+    }
+  },
+  {
+    "model": "mailings.mailingattempt",
+    "pk": 7,
+    "fields": {
+      "mailing": 1,
+      "attempt_at": "2024-07-28T14:15:53.678Z",
+      "status": "OK",
+      "server_response": "1"
+    }
+  }
+]

@@ -1,19 +1,18 @@
+{% load my_tags %}
 <div class="collapse text-bg-dark" id="navbarHeader">
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
                 <h4>About</h4>
                 <p class="text-body-secondary">Mailing - удобное управление рассылками</p>
-                <p class="text-body-secondary">Количество рассылок всего</p>
-                <p class="text-body-secondary">Количество активных рассылок</p>
-                <p class="text-body-secondary">Количество уникальных клиентов для рассылок</p>
+                <p class="text-body-secondary">Количество рассылок всего: {% mailings_total %}</p>
+                <p class="text-body-secondary">Количество активных рассылок: {% mailings_active %}</p>
+                <p class="text-body-secondary">Количество уникальных клиентов для рассылок: {% unique_clients %}</p>
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
                 <h4>Навигация</h4>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">Главная</a></li>
-                    <li><a href="#" class="text-white">Блог</a></li>
-                    <li><a href="#" class="text-white">Контакты</a></li>
+                    <li><a href="/" class="text-white">Главная</a></li>
                     {% if user.is_authenticated %}
                     <li><a href="{% url 'users:logout' %}" class="text-white">Выход</a></li>
                     {% else %}

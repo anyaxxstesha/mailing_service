@@ -5,6 +5,9 @@ from users.forms import StyleFormMixin
 
 
 class PostForm(StyleFormMixin, ModelForm):
+    """
+    Form for creating and updating blog posts.
+    """
     class Meta:
         model = Post
         fields = ('title', 'content', 'preview_image')

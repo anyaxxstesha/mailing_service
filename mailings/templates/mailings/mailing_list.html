@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load my_tags %}
+{% block content %}
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            {% for mailing in object_list %}
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text"><strong>{{ mailing.name }}</strong></p>
+                        <p class="card-text">Время начала рассылки: {{ mailing.started_at }}</p>
+                        <p class="card-text">Время окончания рассылки: {{ mailing.completed_at }}</p>
+                        <p class="card-text">Периодичность: {{ mailing.frequency }}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a class="btn btn-outline-dark" href="{% url 'mailings:mailing_detail' mailing.pk %}" role="button">Посмотреть</a>
+                                <a class="btn btn-outline-dark" href="{% url 'mailings:mailing_update' mailing.pk %}" role="button">{% if mailing.user == user %}Редактировать{% else %}Заблокировать{% endif %}</a>
+                                {% if mailing.user == user or perms.mailings.delete_mailing %}
+                                <a class="btn btn-outline-dark" href="{% url 'mailings:mailing_delete' mailing.pk %}" role="button">Удалить</a>
+                                {% endif %}
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+{% endblock %}

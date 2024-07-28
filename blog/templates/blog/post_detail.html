@@ -13,8 +13,10 @@
                         <p class="card-text">{{ post.content }}</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a class="btn btn-primary" href="{% url 'blog:post_list'%}" role="button">Назад</a>
-                                <a class="btn btn-primary" href="{% url 'blog:post_update' post.pk %}" role="button">Редактировать</a>
+                                <a class="btn btn-outline-dark" href="{% url 'blog:post_list'%}" role="button">Назад</a>
+                                {% if client.user == user or perms.blog.update_post %}
+                                <a class="btn btn-outline-dark" href="{% url 'blog:post_update' post.pk %}" role="button">Редактировать</a>
+                                {% endif %}
                             </div>
                             <small class="text-body-secondary">Количество просмотров: {{ post.views_amount }}</small><br>
                             <small class="text-body-secondary">Дата создания: {{ post.created_at }}</small>
