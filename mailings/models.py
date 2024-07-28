@@ -76,9 +76,14 @@ class Mailing(models.Model):
     frequency = models.CharField(max_length=8, choices=FREQUENCY_CHOICES, verbose_name="Частота", default="DAILY")
     status = models.CharField(max_length=16, default="CREATED", choices=MAILING_STATUS_CHOICES, verbose_name="Статус")
 
+    is_banned = models.BooleanField(default=False, verbose_name="Заблокирована ли рассылка")
+
     class Meta:
         verbose_name = "Рассылка"
         verbose_name_plural = "Рассылки"
+        permissions = [
+            ("can_ban_mailing", "Can ban mailing")
+        ]
 
     def __str__(self):
         return f"Рассылка {self.pk}"

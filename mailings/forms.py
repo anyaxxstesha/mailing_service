@@ -14,3 +14,9 @@ class MailingForm(StyleFormMixin, ModelForm):
     class Meta:
         model = Mailing
         fields = ('name', 'message', 'clients', 'started_at', 'completed_at', 'frequency')
+
+
+class MailingBanForm(StyleFormMixin, ModelForm):
+    class Meta:
+        model = Mailing
+        fields = ('is_banned',)

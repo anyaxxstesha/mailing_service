@@ -12,13 +12,11 @@ def sending_script():
     Main sending script
     """
     now = timezone.now()
-    Mailing.objects.filter(started_at__lte=now, completed_at__gt=now).update(status='SENDING')
-    Mailing.objects.filter(completed_at__lte=now).update(status='COMPLETED')
+    not_banned_mailings = Mailing.objects.exclude(is_banned=True)
+    active_mailings = not_banned_mailings.filter(status='SENDING').filter(started_at__lte=now, completed_at__gt=now)
 
-    query_set_sent_earlier = Mailing.objects.filter(status='SENDING').filter(
-        last_attempt_at__lt=now - F('sending_interval'))
-    query_set_new = Mailing.objects.filter(status='SENDING').filter(
-        last_attempt_at__isnull=True).prefetch_related('message', 'clients')
+    query_set_sent_earlier = active_mailings.filter(last_attempt_at__lt=now - F('sending_interval'))
+    query_set_new = active_mailings.filter(last_attempt_at__isnull=True).prefetch_related('message', 'clients')
 
     attempts = []
 
