@@ -16,8 +16,10 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <a class="btn btn-outline-dark" href="{% url 'mailings:mailing_detail' mailing.pk %}" role="button">Посмотреть</a>
-                                <a class="btn btn-outline-dark" href="{% url 'mailings:mailing_update' mailing.pk %}" role="button">Редактировать</a>
+                                <a class="btn btn-outline-dark" href="{% url 'mailings:mailing_update' mailing.pk %}" role="button">{% if mailing.user == user %}Редактировать{% else %}Заблокировать{% endif %}</a>
+                                {% if mailing.user == user or perms.mailings.delete_mailing %}
                                 <a class="btn btn-outline-dark" href="{% url 'mailings:mailing_delete' mailing.pk %}" role="button">Удалить</a>
+                                {% endif %}
                             </div>
 
                         </div>

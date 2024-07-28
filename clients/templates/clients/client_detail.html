@@ -14,7 +14,9 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <a class="btn btn-outline-dark" href="{% url 'clients:client_list'%}" role="button">Назад</a>
+                                {% if client.user == user or perms.clients.update_client %}
                                 <a class="btn btn-outline-dark" href="{% url 'clients:client_update' client.pk %}" role="button">Редактировать</a>
+                                {% endif %}
                             </div>
                             <small class="text-body-secondary">Количество рассылок с этим клиентом:</small>
                         </div>

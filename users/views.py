@@ -1,12 +1,13 @@
 import secrets
 
 from django.contrib.auth.hashers import make_password
+from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
-from django.views.generic import CreateView, FormView
+from django.views.generic import CreateView, FormView, ListView, UpdateView
 
-from users.forms import UserRegisterForm, UserResetForm
+from users.forms import UserRegisterForm, UserResetForm, UserBanForm
 from users.models import User
 
 from config.settings import EMAIL_HOST_USER
@@ -63,3 +64,16 @@ class UserResetView(FormView):
     @staticmethod
     def generate_password():
         return secrets.token_hex(5)
+
+
+class UserListView(PermissionRequiredMixin, ListView):
+    permission_required = 'users.view_user'
+    model = User
+
+
+class UserBanView(PermissionRequiredMixin, UpdateView):
+    model = User
+    form_class = UserBanForm
+    success_url = reverse_lazy('users:user_list')
+    permission_required = 'users.change_user'
+    template_name = 'users/user_ban.html'

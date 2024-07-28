@@ -4,7 +4,7 @@ from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 from mailings.forms import MessageForm, MailingForm, MailingBanForm
-from mailings.models import Message, Mailing
+from mailings.models import Message, Mailing, MailingAttempt
 from services.mixins import UsersQuerySetMixin, ObjectOwnerPermissionMixin, UpdateObjectOwnerPermissionMixin
 
 
@@ -112,3 +112,13 @@ class MailingDeleteView(LoginRequiredMixin, ObjectOwnerPermissionMixin, DeleteVi
     model = Mailing
     success_url = reverse_lazy("mailings:mailing_list")
     permission_required = 'mailing.delete_mailing'
+
+
+class MailingAttemptListView(ListView):
+    """
+    List of attempted mailing attempts.
+    """
+    model = MailingAttempt
+
+    def get_queryset(self):
+        return MailingAttempt.objects.filter(mailing=self.kwargs['pk'])

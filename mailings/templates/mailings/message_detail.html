@@ -13,7 +13,9 @@
                         <p class="card-text">{{ client.comment }}</p>
                             <div class="btn-group">
                                 <a class="btn btn-outline-dark" href="{% url 'mailings:mailing_list'%}" role="button">Назад</a>
+                                {% if client.user == user or perms.mailings.update_message %}
                                 <a class="btn btn-outline-dark" href="{% url 'mailings:message_update' message.pk %}" role="button">Редактировать</a>
+                                {% endif %}
                             </div>
                             <small class="text-body-secondary">Создатель письма: {{ message.user }}</small>
                         </div>

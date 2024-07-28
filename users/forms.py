@@ -1,5 +1,5 @@
 from django.contrib.auth.forms import UserCreationForm
-from django.forms import Form, EmailField, ValidationError, BooleanField
+from django.forms import Form, EmailField, ValidationError, BooleanField, ModelForm
 from users.models import User
 
 
@@ -29,3 +29,9 @@ class UserResetForm(StyleFormMixin, Form):
             raise ValidationError('Пользователь с таким email не найден')
         self.user = qs.first()
         return email
+
+
+class UserBanForm(StyleFormMixin, ModelForm):
+    class Meta:
+        model = User
+        fields = ('is_active',)
