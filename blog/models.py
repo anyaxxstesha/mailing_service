@@ -2,6 +2,9 @@ from django.db import models
 
 
 class Post(models.Model):
+    """
+    Model for post
+    """
     title = models.CharField(
         max_length=100,
         verbose_name="Наименование поста",

@@ -3,17 +3,23 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 
 from blog.forms import PostForm
 from blog.models import Post
+from services.utils import get_posts_from_cache
 
 
 class PostListView(ListView):
+    """
+    Displays a list of 3 blog posts.
+    """
     model = Post
 
     def get_queryset(self):
-
-        return self.model.objects.filter(is_published=True).order_by("?")[:3]
+        return get_posts_from_cache()
 
 
 class PostDetailView(DetailView):
+    """
+    Detail view for one post
+    """
     model = Post
 
     def get_object(self, queryset=None):
@@ -24,12 +30,18 @@ class PostDetailView(DetailView):
 
 
 class PostCreateView(CreateView):
+    """
+    Create a new post
+    """
     model = Post
     form_class = PostForm
     success_url = reverse_lazy("blog:post_list")
 
 
 class PostUpdateView(UpdateView):
+    """
+    Update an existing post
+    """
     form_class = PostForm
     model = Post
 
@@ -38,5 +50,8 @@ class PostUpdateView(UpdateView):
 
 
 class PostDeleteView(DeleteView):
+    """
+    Delete a post
+    """
     model = Post
     success_url = reverse_lazy("blog:post_list")

@@ -1,26 +1,40 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 from mailings.forms import MessageForm, MailingForm
 from mailings.models import Message, Mailing
+from services.mixins import UsersQuerySetMixin
 
 
-class MessageListView(ListView):
+class MessageListView(LoginRequiredMixin, UsersQuerySetMixin, ListView):
+    """
+    List of all messages.
+    """
     model = Message
 
 
-class MessageDetailView(DetailView):
+class MessageDetailView(LoginRequiredMixin, UsersQuerySetMixin, DetailView):
+    """
+    Detail view of a message.
+    """
     model = Message
 
 
-class MessageCreateView(CreateView):
+class MessageCreateView(LoginRequiredMixin, CreateView):
+    """
+    Create a new message.
+    """
     model = Message
     form_class = MessageForm
     success_url = reverse_lazy("mailings:message_list")
 
 
-class MessageUpdateView(UpdateView):
+class MessageUpdateView(LoginRequiredMixin, UsersQuerySetMixin, UpdateView):
+    """
+    Update an existing message.
+    """
     model = Message
     form_class = MessageForm
 
@@ -28,20 +42,32 @@ class MessageUpdateView(UpdateView):
         return reverse("mailings:message_detail", kwargs={"pk": self.object.pk})
 
 
-class MessageDeleteView(DeleteView):
+class MessageDeleteView(LoginRequiredMixin, UsersQuerySetMixin, DeleteView):
+    """
+    Delete an existing message.
+    """
     model = Message
     success_url = reverse_lazy("mailings:message_list")
 
 
-class MailingListView(ListView):
+class MailingListView(LoginRequiredMixin, UsersQuerySetMixin, ListView):
+    """
+    List of all mailings.
+    """
     model = Mailing
 
 
-class MailingDetailView(DetailView):
+class MailingDetailView(LoginRequiredMixin, UsersQuerySetMixin, DetailView):
+    """
+    Detail view of a mailing.
+    """
     model = Mailing
 
 
-class MailingCreateView(CreateView):
+class MailingCreateView(LoginRequiredMixin, CreateView):
+    """
+    Create a new mailing.
+    """
     model = Mailing
     form_class = MailingForm
 
@@ -54,7 +80,10 @@ class MailingCreateView(CreateView):
     success_url = reverse_lazy("mailings:mailing_list")
 
 
-class MailingUpdateView(UpdateView):
+class MailingUpdateView(LoginRequiredMixin, UsersQuerySetMixin, UpdateView):
+    """
+    Update an existing mailing.
+    """
     model = Mailing
     form_class = MailingForm
 
@@ -62,6 +91,9 @@ class MailingUpdateView(UpdateView):
         return reverse("mailings:mailing_detail", kwargs={"pk": self.object.pk})
 
 
-class MailingDeleteView(DeleteView):
+class MailingDeleteView(LoginRequiredMixin, UsersQuerySetMixin, DeleteView):
+    """
+    Delete an existing mailing.
+    """
     model = Mailing
     success_url = reverse_lazy("mailings:mailing_list")

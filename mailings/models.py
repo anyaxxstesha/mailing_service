@@ -1,11 +1,9 @@
 from smtplib import SMTPException
-from datetime import timedelta
 
+from dateutil.relativedelta import relativedelta
 from django.core.mail import send_mail
 from django.db import models
-from django.utils import timezone
 from relativedeltafield import RelativeDeltaField
-from dateutil.relativedelta import relativedelta
 
 from clients.models import Client
 from users.models import User
@@ -25,6 +23,9 @@ SET_NULL = dict(
 
 
 class Message(models.Model):
+    """
+    Model for storing messages to be sent via email.
+    """
     subject = models.CharField(max_length=256, verbose_name='Тема письма', **NULL)
     body = models.TextField(verbose_name='Тело письма', **NULL)
     user = models.ForeignKey(User, verbose_name='Создатель письма', **CASCADE)
@@ -56,6 +57,9 @@ ATTEMPT_STATUS_CHOICES = [
 
 
 class Mailing(models.Model):
+    """
+    Model for storing mailing campaigns.
+    """
     name = models.CharField(max_length=255, verbose_name='Название рассылки')
     message = models.ForeignKey(Message, verbose_name='Сообщение', related_name='mailings', **CASCADE)
     clients = models.ManyToManyField(Client, verbose_name='Клиенты', related_name='mailings')
@@ -80,6 +84,9 @@ class Mailing(models.Model):
         return f"Рассылка {self.pk}"
 
     def set_sending_interval(self):
+        """
+        Set sending interval based on frequency.
+        """
         if self.frequency == "DAILY":
             self.sending_interval = relativedelta(days=1)
         elif self.frequency == "WEEKLY":
@@ -88,17 +95,22 @@ class Mailing(models.Model):
             self.sending_interval = relativedelta(months=1)
 
     def save(
-        self, force_insert=False, force_update=False, using=None, update_fields=None
+            self, force_insert=False, force_update=False, using=None, update_fields=None
     ):
         self.set_sending_interval()
         super().save(force_insert=force_insert, force_update=force_update, using=using, update_fields=update_fields)
 
     def try_n_attempts(self, now, n=10):
+        """
+        Try sending email to all clients n times.
+        Returns list of MailingAttempt objects.
+        """
         sent = False
         attempts = []
         for i in range(n):
             try:
-                response = send_mail(self.message.subject, self.message.body, None, recipient_list=self.clients.values_list('email', flat=True),
+                response = send_mail(self.message.subject, self.message.body, None,
+                                     recipient_list=self.clients.values_list('email', flat=True),
                                      fail_silently=False)
             except SMTPException as e:
                 response = str(e)
@@ -115,6 +127,9 @@ class Mailing(models.Model):
 
 
 class MailingAttempt(models.Model):
+    """
+    Model for storing mailing attempts.
+    """
     mailing = models.ForeignKey(Mailing, verbose_name='Рассылка', related_name='attempts', **SET_NULL, **NULL)
     attempt_at = models.DateTimeField(verbose_name='Дата и время попытки', **NULL)
     status = models.CharField(max_length=6, choices=ATTEMPT_STATUS_CHOICES, verbose_name="Статус")

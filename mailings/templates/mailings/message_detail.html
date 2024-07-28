@@ -12,8 +12,8 @@
                         <p class="card-text">{{ message.body }}</p>
                         <p class="card-text">{{ client.comment }}</p>
                             <div class="btn-group">
-                                <a class="btn btn-primary" href="{% url 'mailings:mailing_list'%}" role="button">Назад</a>
-                                <a class="btn btn-primary" href="{% url 'mailings:mailing_update' mailing.pk %}" role="button">Редактировать</a>
+                                <a class="btn btn-outline-dark" href="{% url 'mailings:mailing_list'%}" role="button">Назад</a>
+                                <a class="btn btn-outline-dark" href="{% url 'mailings:message_update' message.pk %}" role="button">Редактировать</a>
                             </div>
                             <small class="text-body-secondary">Создатель письма: {{ message.user }}</small>
                         </div>

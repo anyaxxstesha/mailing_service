@@ -1,6 +1,6 @@
 from django.core.management import BaseCommand
 
-from mailings.services import sending_script
+from services.utils import sending_script
 
 
 class Command(BaseCommand):

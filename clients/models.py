@@ -1,7 +1,12 @@
 from django.db import models
 
+from users.models import User
+
 
 class Client(models.Model):
+    """
+    Model describing client (recipient) of the mailing
+    """
     email = models.EmailField(
         unique=True,
         verbose_name='email address'
@@ -27,11 +32,13 @@ class Client(models.Model):
         blank=True,
         null=True,
     )
+    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Пользователь, добавивший клиента')
 
     class Meta:
         verbose_name = "Клиент"
         verbose_name_plural = "Клиенты"
         ordering = ["id"]
+        unique_together = ["email", "user"]
 
     def __str__(self):
         return self.email

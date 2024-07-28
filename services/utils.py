@@ -1,10 +1,16 @@
+from django.conf import settings
+from django.core.cache import cache
 from django.db.models import F
 from django.utils import timezone
 
+from blog.models import Post
 from mailings.models import Mailing, MailingAttempt
 
 
 def sending_script():
+    """
+    Main sending script
+    """
     now = timezone.now()
     Mailing.objects.filter(started_at__lte=now, completed_at__gt=now).update(status='SENDING')
     Mailing.objects.filter(completed_at__lte=now).update(status='COMPLETED')
@@ -12,7 +18,7 @@ def sending_script():
     query_set_sent_earlier = Mailing.objects.filter(status='SENDING').filter(
         last_attempt_at__lt=now - F('sending_interval'))
     query_set_new = Mailing.objects.filter(status='SENDING').filter(
-       last_attempt_at__isnull=True).prefetch_related('message', 'clients')
+        last_attempt_at__isnull=True).prefetch_related('message', 'clients')
 
     attempts = []
 
@@ -29,3 +35,18 @@ def sending_script():
     query_set_new.update(last_attempt_at=now)
     query_set_sent_earlier.update(last_attempt_at=now)
 
+
+def get_posts_from_cache():
+    """
+    Get posts from cache, if cache is empty, get posts from DB
+    """
+    if settings.CACHE_ENABLED:
+        key = 'posts_list'
+        posts = cache.get(key)
+
+        if posts is None:
+            posts = Post.objects.order_by("?")[:3]
+            cache.set(key, posts)
+        return posts
+
+    return Post.objects.order_by("?")[:3]
