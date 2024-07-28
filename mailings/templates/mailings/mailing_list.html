@@ -8,21 +8,18 @@
             {% for post in object_list %}
             <div class="col">
                 <div class="card shadow-sm">
-                    <img style="height: 20rem;" src="{{ post.preview_image | media_filter }}">
                     <div class="card-body">
-                        <p class="card-text"><strong>{{ post.title }}</strong></p>
-                        <p class="card-text">{{ post.content | truncatechars:100 }}</p>
+                        <p class="card-text"><strong>{{ mailing.name }}</strong></p>
+                        <p class="card-text">Время начала рассылки: {{ mailing.started_at }}</p>
+                        <p class="card-text">Время окончания рассылки: {{ mailing.completed_at }}</p>
+                        <p class="card-text">Периодичность: {{ mailing.frequency }}</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a class="btn btn-primary" href="{% url 'blog:post_detail' post.pk %}" role="button">Посмотреть</a>
-                                <a class="btn btn-primary" href="{% url 'blog:post_update' post.pk %}" role="button">Редактировать</a>
-                                <a class="btn btn-primary" href="{% url 'blog:post_delete' post.pk %}" role="button">Удалить</a>
+                                <a class="btn btn-primary" href="{% url 'mailings:mailing_detail' mailing.pk %}" role="button">Посмотреть</a>
+                                <a class="btn btn-primary" href="{% url 'mailings:mailing_update' mailing.pk %}" role="button">Редактировать</a>
+                                <a class="btn btn-primary" href="{% url 'mailings:mailing_delete' mailing.pk %}" role="button">Удалить</a>
                             </div>
 
-                        </div>
-                        <div>
-                            <small class="text-body-secondary">Просмотры: {{ post.views_amount }}</small><br>
-                            <small class="text-body-secondary">{{ post.created_at }}</small>
                         </div>
                     </div>
                 </div>
