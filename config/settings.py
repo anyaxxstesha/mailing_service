@@ -1,4 +1,5 @@
 import os
+from datetime import timedelta
 from pathlib import Path
 import dotenv
 
@@ -123,3 +124,9 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_TIMEZONE = "UTC"
 CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 30 * 60
+CELERY_BEAT_SCHEDULE = {
+    'sending_mailings': {
+        'task': 'mailings.tasks.send_mails',
+        'schedule': timedelta(minutes=1),
+    }
+}

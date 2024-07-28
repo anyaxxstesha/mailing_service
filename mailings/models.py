@@ -67,7 +67,7 @@ class Mailing(models.Model):
     started_at = models.DateTimeField(verbose_name='Дата и время начала')
     completed_at = models.DateTimeField(verbose_name='Дата и время завершения')
 
-    sending_interval = RelativeDeltaField(verbose_name='Интервал рассылки')
+    sending_interval = RelativeDeltaField(verbose_name='Интервал рассылки', **NULL)
 
     frequency = models.CharField(max_length=8, choices=FREQUENCY_CHOICES, verbose_name="Частота", default="DAILY")
     status = models.CharField(max_length=16, default="CREATED", choices=MAILING_STATUS_CHOICES, verbose_name="Статус")
@@ -98,7 +98,7 @@ class Mailing(models.Model):
         attempts = []
         for i in range(n):
             try:
-                response = send_mail(self.message.subject, self.message.body, None, recipient_list=[self.clients],
+                response = send_mail(self.message.subject, self.message.body, None, recipient_list=self.clients.values_list('email', flat=True),
                                      fail_silently=False)
             except SMTPException as e:
                 response = str(e)
