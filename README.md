@@ -10,7 +10,7 @@
 - Создать и заполнить файл .env по шаблону .env.sample
 
 - Применить миграции с помощью python manage.py migrate
-
+- Добавить данные в базу данных с помощью python manage.py loaddata data.json
 Запустить следующие команды (каждую в своём процессе)
 - redis-server
 - celery -A config worker -l info
